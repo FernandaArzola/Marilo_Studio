@@ -1,0 +1,30 @@
+/*NAVBAR*/
+.navbar-home{
+    height: 20vh;
+}
+#navbar a{
+    color: #827bb1;
+}
+#navbar .logo{
+    float: left;
+    padding-top: 10px;
+}
+#navbar ul{
+    padding-top: 20px;
+    float: right;
+    font-size: 14px;
+    list-style: none;
+    font-weight: 600;
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+#navbar ul li a:hover {
+    text-decoration: underline;
+    color: #bfd068;
+}

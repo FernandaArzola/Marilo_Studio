@@ -1,4 +1,7 @@
 @import "footer";
+@import "navbar";
+@import "contact";
+@import "portafolio";
 
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Archivo+Black&family=Gayathri:wght@100;400;700&family=Montserrat:wght@200;300;400;500;700&family=Noto+Sans+Mono:wght@300;400;500;600;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap');
@@ -57,41 +60,6 @@ a{
 }
 .display-1{
     font-size: 6rem;
-}
-/* NAVBAR */
-.navbar-home{
-    height: 20vh;
-}
-#navbar{
-    overflow: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-#navbar a{
-    color: #827bb1;
-}
-#navbar .logo{
-    float: left;
-    padding-top: 10px;
-}
-#navbar ul{
-    padding-top: 20px;
-    float: right;
-    font-size: 14px;
-    list-style: none;
-    font-weight: 600;
-}
-#navbar ul li{
-    float: left;
-}
-#navbar ul li a{
-    display: block;
-    padding: 15px;
-    text-align: center;
-}
-#navbar ul li a:hover {
-    text-decoration: underline;
-    color: #bfd068;
 }
 /* SHOWCASE */
 #showcase{
@@ -198,131 +166,6 @@ p{
     }
 }
 
-/* PORTAFOLIO */
-#portafolio{
-    padding: 90px 0;
-    background: #f8f9fa;
-}
-#portafolio h2{
-    padding-bottom: 20px;
-    text-align: center;
-}
-#portafolio h6{
-    padding-bottom: 90px;
-    text-align: center;
-    font-family: "Montserrat";
-    font-weight: 400;
-}
-.portafolio-row{
-    display: flex;
-}
-.portafolio-row-box{
-    margin: 15.9px;
-    background: #fff;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-}
-.portafolio-row-box p{
-    text-align: center;
-    font-family: "poppins";
-    font-weight: 400;
-    padding: 20px;
-    margin-top: 0;
-}
-/* CONTACT FORM */
-.contact{
-    margin: 0;
-    padding: 0;
-    transition: 0.5s;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f8f9fa;
-}
-body{
-    height: 100vh;
-    width: 100%;
-}
-.contact__image-wrapper{
-    height: 90%;
-    width: 40%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact__image{
-    width: 80%;
-}
-.contact__right-side{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 0 7.3 0 4.7%;
-    width: 50%;
-}
-.contact__title{
-    font-size: 60px;
-    font-family: "poppins";
-    font-weight: 900;
-    margin-bottom: 70px;
-    text-transform: uppercase;
-}
-.contact__form-wrapper, .contact__input-line{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-}
-.contact__input-line{
-    margin-bottom: 45px;
-}
-.contact__label{
-    font-size: 18px;
-    font-weight: 400;
-}
-.contact__input{
-    height: 30px;
-    outline: none;
-    padding: 5px 0;
-    border-bottom: 2px solid #bfd068;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    color: #1F1E1F;
-    background-color: transparent;
-}
-.contact__input--textarea{
-    height: 100px;
-    outline: none;
-    padding: 5px 0;
-    border-bottom: 2px solid #bfd068;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    width: 100%;
-    color: #1F1E1F;
-    background-color: transparent;
-    resize: none;
-}
-.contact__submit-button{
-    padding: 18px 55px;
-    background-color: #1f1e1f;
-    border-radius: 50px;
-    color: #bfd068;
-    font-weight: 500;
-    font-family: 'Montserrat';
-    font-size: 15px;
-    cursor: pointer;
-}
-.contact__submit-button:hover{
-    background-color: #827bb1;
-}
 @media (max-width:600px) {
     .showcase-flex h3{
         padding: 1px 0;
