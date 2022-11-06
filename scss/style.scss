@@ -5,13 +5,12 @@
 
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Anton&family=Archivo+Black&family=Gayathri:wght@100;400;700&family=Montserrat:wght@200;300;400;500;700&family=Noto+Sans+Mono:wght@300;400;500;600;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Rubik+Mono+One&display=swap');
-/* RESET */
-$font-stack: "Montserrat";
-$background-color: #f8f9fa;
 $text-color: #1f1e1f;
+$background-color: #f8f9fa; 
 $primary-color: #bfd068;
 $secondary-color: #827bb1;
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +19,8 @@ $secondary-color: #827bb1;
 /* MAIN STYLING */
 html,
 body{
-    font-family: $font-stack
-    $background-color
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
 }
 
 h1{
@@ -75,11 +74,11 @@ a{
 }
 #showcase h1{
     line-height: 1.2em;
-    text-decoration: underline $text-color;
+    text-decoration: underline #1f1e1f;
 }
 #showcase .title-outline{
     color: #fff;
-    -webkit-text-stroke: 2px $text-color;
+    -webkit-text-stroke: 2px #1f1e1f;
 }
 .showcase-row{
     display: flex;
@@ -98,18 +97,18 @@ a{
 p{
     font-family: "Noto Sans Mono" ;
     font-weight: 600 ;
-    color: $secondary-color;
+    color: #827bb1;
 }
 /* ABOUT US */
 .display-2{
     font-size: 2.5rem;
     font-weight: 400;
     padding-top: 80px;
-    color: $background-color;
+    color: #f8f9fa;
     font-family: "Anton";
 }
 #about{
-    background: $text-color;
+    background: #1F1E1F;
     padding: 80px 80px;
 }
 .showcase-flex{
@@ -124,7 +123,7 @@ p{
     padding-left: 40px;
     font-family: "Montserrat";
     font-weight: 400;
-    color: $background-color;
+    color: #f8f9fa;
     font-size: 14.5px;
 }
 .contenedor{
@@ -151,7 +150,7 @@ p{
 .btn a span{
     height: 88%;
     width: 96%;
-    background: $text-color;
+    background: #1F1E1F;
     /*display: block;*/
     position: absolute;
     top: 50%;
@@ -159,7 +158,7 @@ p{
     transform: translate(-50%, -50%);
     border-radius: 6px;
     line-height: 62px;
-    color: $background-color;
+    color: #f8f9fa;
     font-size: 15px;
     text-align: center;
 }
@@ -195,7 +194,7 @@ p{
             align-items: center;
         }
         &:hover{
-            background-color: $text-color;
+            background-color: #1F1E1F;
             border-radius: 10px;
         }
         &:hover figure{
@@ -208,11 +207,11 @@ p{
             font-size: 22px;
         }
         &:hover h5{
-            color: $background-color;
+            color: #f8f9fa;
             font-size: 22px;
         }
         p{
-            color: $text-color;
+            color: #1F1E1F;
             text-align: center;
             margin-top: 1rem;
             line-height: 2;
@@ -221,13 +220,54 @@ p{
             font-weight: 500;
         }
         &:hover p{
-            color: $background-color;
+            color: #f8f9fa;
             font-family: "Montserrat";
             font-weight: 500;
             font-size: 13px;
         }
     }
 }
+.container-3{
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.display-3{
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.btn-2{
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+.btn-dark{
+    background: $text-color;
+    border: none;
+    color: $primary-color;
+}
+//Secondheader
+#secondheader{
+    height: 100vh;
+    .secondheader-title{
+        float: left;
+        width: 50%;
+        padding-top: 250px;
+        a{
+            margin-top: 50px;
+        }
+    }
+    .secondheader-image{
+        float: right;
+        width: 50%;
+        background: url("../imagenes/flowers.png");
+        height: 100%;
+    }
+} //#secondheader ends
 @media (max-width:600px) {
     .showcase-flex h3{
         padding: 1px 0;
@@ -289,6 +329,26 @@ p{
     }
     .container{
         grid-template-columns: repeat(1,1fr);
+    }
+    .display-3{
+        font-size: 2.5rem;
+    }
+    #secondheader{
+        height: 100%;
+        text-align: center;
+        .secondheader-title{
+            float: none;
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .secondheader-image{
+            float: none;
+            height: 400px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
     }
 }
 @media (max-width: 1200px){

@@ -416,6 +416,43 @@ p {
       font-weight: 500;
       font-size: 13px; }
 
+.container-3 {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px; }
+
+.display-3 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.4; }
+
+.btn-2 {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 40px;
+  letter-spacing: 1px;
+  border-radius: 4px; }
+
+.btn-dark {
+  background: #1f1e1f;
+  border: none;
+  color: #bfd068; }
+
+#secondheader {
+  height: 100vh; }
+  #secondheader .secondheader-title {
+    float: left;
+    width: 50%;
+    padding-top: 250px; }
+    #secondheader .secondheader-title a {
+      margin-top: 50px; }
+  #secondheader .secondheader-image {
+    float: right;
+    width: 50%;
+    background: url("../imagenes/flowers.png");
+    height: 100%; }
+
 @media (max-width: 600px) {
   .showcase-flex h3 {
     padding: 1px 0;
@@ -461,7 +498,23 @@ p {
     flex-wrap: wrap;
     width: 40%; }
   .container {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .display-3 {
+    font-size: 2.5rem; }
+  #secondheader {
+    height: 100%;
+    text-align: center; }
+    #secondheader .secondheader-title {
+      float: none;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px; }
+    #secondheader .secondheader-image {
+      float: none;
+      height: 400px;
+      width: 100%;
+      background-position: center;
+      background-size: cover; } }
 
 @media (max-width: 1200px) {
   .container-2 {
