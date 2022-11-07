@@ -268,6 +268,56 @@ p{
         height: 100%;
     }
 } //#secondheader ends
+//services-index
+#services{
+    margin: auto;
+    max-width: 1300px;
+    padding: 0 20px;
+    padding: 100px 0;
+    h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+    font-family: "Anton";
+    color: $secondary-color;
+    }
+    p.large{
+        text-align: center;
+        font-family: "Montserrat";
+        font-weight: 500;
+        color: $text-color;
+        font-size: 1.1rem;
+        padding-bottom: 50px;
+    }
+    .services-flex{
+        display: flex;
+        gap: 10px;
+        .icons-services{
+            font-size: 45px;
+            height: 40px;
+            color: $primary-color;
+        }
+        &-box{
+            background: $text-color;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 15px;
+            h5{
+                text-align: center;
+                font-size: 1.4rem;
+                padding: 60px 0;
+                padding-bottom: 20px;
+                color: $background-color;
+                }
+            p{
+                font-family: "Montserrat";
+                font-weight: 300;
+                color: $background-color;
+                font-size: 15px;
+            }
+        }
+    }
+}
 @media (max-width:600px) {
     .showcase-flex h3{
         padding: 1px 0;
@@ -349,6 +399,15 @@ p{
             background-position: center;
             background-size: cover;
         }
+    }
+    .services-flex{
+        flex-direction: column;
+        padding: 40px;
+    }
+    #services p.large{
+        font-size: 16px;
+        padding: 0 30px 0 30px;
+        text-align: center;
     }
 }
 @media (max-width: 1200px){
